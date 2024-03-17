@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    .bi{
+        color: white;
+        margin-left: 0px;
+    }
+</style>
+</head>
+<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAe1BMVEX///8AAAD8/Pz39/ft7e3h4eFSUlIFBQUKCgrz8/NHR0eurq44ODhCQkIUFBTU1NQ9PT22trYpKSkuLi5MTEzX19d2dnYbGxtdXV1paWmLi4u8vLw/Pz/GxsZsbGySkpIYGBikpKQiIiKbm5uFhYXCwsJYWFh/f391dXUCbJIQAAAFD0lEQVR4nO2diZbiOAxF7awsAYqwFEtBKkAB//+FUzXTcxpoJ7GcSHL66H6B3nlJbEuWopQgCIIgCIIgCIIgCIIgCIJAxzCOh9wxtCbejab6m+loF3PH0oJZoh9IZtzxOBKsU/1Eegu4Y3JhONF/MOnhyxK+/alD67eQOy4wG5MOrbfccUGZm3VoPeeODEaQVwnJ+/XCl1U6tC65Y4NQbUjPLKkxROsxd3QAagzResEdnT3jOh19smRRL6Q3ljQY0h9LGgzpjSWVi/pv+rG8Z81CMu4YbbAwpB+WWBjSC0v2Njq03nPH2YiVId8nLO44m7A0xH9LPmyFfHBHWs+XrQ6tv7hjrcWQOaliwh1rHQBDtD5wR1vDCCJkxB1tNQeIDp8tARnisSVAQ/y1ZAkVsuSO2MwMqkNrPwsNSXPgryTcMZtwMMRPSxwM8dISJ0M8tCQA7LIemXiWCY6cHqwfkog79l+Eq/Fu+5E2R1xF+rHdzVeMxgTxvDiOTi0kPMk5jY7FPKbVE++L+zLvSMGLnnx5P+/R7xbEX+d1kg8wFDwzWCTr8xeCnuhQ3q4LAgWveq638tDV1yAsk3dqBc+8J2X78nx4IffBxPTSUsrsxC3hf/JWe4C5F3b8x6BF4nuP8ol1ZeCcnIyn3LE/M3X9HgNzCfg4ZiusKja0uL0mxgtXvDgVI1bcUZtYOQi5cAdtYucgxLtX/QeX1515g2XmBNcRcMdsJIWfvELumM3AhfjpiIMQ9ckds4l3uA77+iwlLoVHL9eRi4MQxxwoLk6nK8ckKCZuJW1QrZkGx1rdljvuV1w7BELLmz5UZM6ZlKj2IjI1eYtMnU9K2uj4VtJ49ZWKRcvMqS9KstYZ4MiLNz7roMts6IGSt0665Ybs28euuv5C5s3KqLOev5A1EbHssHcxBF/86Y6k0wJp4FxHb8u140JvcOXRsem8YB1U9Kz2TQePEqTOXvLzyRFHh1JHWh1rLB1K3Sl13PB0KLWm0+GS+QFwo9LhUgkBQZS3K7B1KLWj0HHG16FU8ZfoUOqMLCMlG0KArIRwmALqrv5Kp0OVmEIom8TBnSIQKLtKGlvv20DpCOr6jrw3eQL1uEj5sqPmtnM6HSHqFcGUbnQVcp2UrqekxBVCt7IjH68Qj7gvIOcd6doTka9nO1zKcmOIq0NrqtmBqDutH6h2W9gHK6oDIn6e7k4kBL2ARdXojn637pNGR4StQ2uaJkuC6080M1MI8loEeUZFUiahGd1K0I5BM+uJoGFpSqEjxtehNcUkcJKOJYoZdSRlBfQyj6qcEd0tGwIhJNe3CKYGBiRdrwN8IUTNcPifLdT89W/wM9lEVV38TLZD/vrkkHXBz2RD7wGn2+/HPd5Cs8X4I4GBO63Nr7c2Bi4/+LstUDiPvxyZgfKTKboQwDIyeclPHQAXiPEXEuvO18ww2WBvvS3AT5taPiB5xUIwtix24U8Qs9r8nsrKS5XB2epjjL/9tThXfRa1xbOwsEiMEZysmp4ti6Eyw0vTR5yiRFJfQBysrZJr0br+60dSRqy5oZkerXOEtYs9TfGtuqtvA3qyqxf7jGjwWUUvHPzPYTNz60DbvjB7IsMSPXIqMx1Mf+0inBMY3F4ecNMybsfrYk/9H7XV5kFK1uo8N36Qkm5cRri0Iy6WP/uuQbZuXbs83P+db/e+LLj+NRhGnVWSo6h/v4ETBEEQBEEQBEEQBEEQBEHwlH8A0TpVTket+rIAAAAASUVORK5CYII=" type="image/x-icon">
+<body style="background-color: black;">
+<!--Start Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light   ">
+        <div class="container-fluid" style="background-color: black;">
+          <a class="navbar-brand text-white" href="#" style="font-size: 30px ; margin-left: 40px;">Uber</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" style="margin-top: -25px; margin-left: 20px;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+            </a>
+            <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> 
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#" style="margin-top: 5px;">Safety</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" style="margin-top: 5px;">Help</a>
+              </li>
+              
+             <button style="width: 70px; margin-left: 600px; background: none; border: none; margin-top: 7px; font-size: 12px;"> <i class="bi bi-globe " > EN</i></button>
+              
+             <button style="background: none; border: none; color: white; font-size: 12px; margin-top: 7px; width: 90px; font-size: 15px;"><i class="bi bi-three-dots"></i>  Products </button>
+             
+            <button style="background: none; border: none; color: white; margin-top: 7px; margin-left: 20px;">Login</button>
+             <button style="background-color: white; border: none; border-radius: 50px; width: 80px; height: 40px; margin-left: 10px; margin-top: 7px;">Sign Up</button>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+<!-- Start slide -->
+<div style=" width: 650px; margin-top: 250px; margin-left: 90px; color: white; font-weight: bold;">
+    <p style="font-size: 50px;">Go Anywhere With <br> Uber</p>
+    <p style="font-weight: normal; margin-top: -10px; font-size: 18px;">Request a ride, Hope in, and go. </p>
+
+    <input type="location" class="hasan" placeholder="Enter location " style="width: 300px;border-radius: 8px; height: 40px; "><i class="bi bi-send-arrow-up-fill" style="color: rgb(0, 0, 0); margin-left: -30px;"></i>
+    <br>
+    <br>
+    <input type="location" placeholder="Enter destination" style="width: 300px; border-radius: 8px; height: 40px;">
+
+<br>
+<br>
+    <button style="background-color: white; border-radius: 5px; border: none; height: 50px; width: 120px; font-size: 15px; ">See Prices</button>
+</div>
+
+<!-- Start Main -->
+    <div style="margin-left: 700px; margin-top: -550px;">
+        <img src="images/Ride-with-Uber.webp" alt="">
+    </div>
+<br>
+<br>
+
+    <div style="background-color: white; height: 1350px;">
+        <div>
+            <img src="images/earner-illustra.webp" alt="" style="margin-top: 60px; margin-left: 80px;">
+        </div>
+        <div>
+        <p style="color: rgb(31, 30, 30); margin-left: 800px; font-size: 50px; font-weight: bold; margin-top: -465px;">Drive when you <br> want, make what <br> you need</p>
+        <p style="color: black; margin-left: 800px; font-size: 18px;  margin-top: -0px;">Make money on your schedule with deliveries or <br> rides—or both. You can use your own car or choose a rental <br> through Uber.</p>
+        <button style="background-color: rgb(0, 0, 0); border-radius: 5px; border: none; height: 50px; width: 120px; font-size: 15px; margin-left: 800px; color: white; font-weight: bold; margin-top: 10px;">Get Started</button>
+        <a href="#" style="margin-left: 30px; color: black; ">Already have an account?   Sign in  </a>
+        </div>
+
+
+<div>
+  <img src="images/2nd.webp" alt="" style="margin-left: 710px; margin-top: 180px;">
+</div>
+
+<div style="margin-left: -700px;">
+  <p style="color: rgb(32, 32, 32); margin-left: 800px; font-size: 50px; font-weight: bold; margin-top: -465px;">The Uber you <br> know, reimagined <br> for business</p>
+  <p style="color: black; margin-left: 800px; font-size: 18px;  margin-top: -0px;">Uber for Business is a platform for managing global rides and <br> meals, and local deliveries, for companies of any size</p>
+  <button style="background-color: rgb(0, 0, 0); border-radius: 5px; border: none; height: 50px; width: 120px; font-size: 15px; margin-left: 800px; color: white; font-weight: bold; margin-top: 10px;">Get Started</button>
+  <a href="#" style="margin-left: 30px; color: black; ">Check out our solutions   </a>
+  </div>
+
+
+    </div>
+
+    <div style="background-color: rgb(236, 236, 231); height: 350px;">
+      <p style="margin-left: 150px; font-size: 35px; font-weight: bold; ">It's easier in the apps</p>
+
+      <button style="background-color: white; width: 550px; height: 200px; margin-top: 30px; margin-left: 120px; border: none;">
+<img src="images/qr.webp" alt="" style="height: 140px; margin-right: 320px;">
+<h3 style="margin-left: 120px; margin-top: -90px; font-weight: bold; font-size: 23px;">Download the Uber app</h3>
+<i class="bi bi-arrow-right-short" style="font-size: 35px; color: black; margin-left: 450px; ; "></i>
+<p style="margin-left: -10px; margin-top: -60px;">Scan to download</p>
+      </button>
+
+      <div style="margin-top: -200px;">
+      <button style="background-color: white; width: 550px; height: 200px; ; margin-left: 720px; border: none;">
+        <img src="images/qr.webp" alt="" style="height: 140px; margin-right: 320px;">
+        <h3 style="margin-left: 130px; margin-top: -90px; font-weight: bold; font-size: 23px;">Download the Driver app</h3>
+        <i class="bi bi-arrow-right-short" style="font-size: 35px; color: black; margin-left: 450px; ; "></i>
+        <p style="margin-left: -10px; margin-top: -60px;">Scan to download</p>
+              </button></div>
+    </div>
+
+    <!-- Start Footer -->
+    <div style="background-color: black; height: 900px;">
+     <div style="margin-top: 100px;"><a href="#" class="hasan" style="color: white; font-size:  25px; text-decoration: none; margin-left: 100px;">Uber</a></div>
+     <br>
+     <br>
+     <a href="#" style="color: white; margin-left:100px; text-decoration: none;">Visit help center</a>
+
+
+     <div>
+      <h5 style="color: white; margin-left: 100px; margin-top: 60px; font-weight: normal; font-size: 20px;">Company</h5>
+      <br>
+      <a href="#" style="color: white; text-decoration: none; margin-left: 100px; font-size: 13px;">About us</a> 
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Our offerings</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Newsroom</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Investors</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Blog</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Careers</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">AI</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Gift cards</p></a>
+     </div>
+ 
+     <div style="margin-left: 300px; margin-top: -410px;">
+      <h5 style="color: white; margin-left: 100px; margin-top: 90px; font-weight: normal; font-size: 20px;">Products</h5>
+      <br>
+      <a href="#" style="color: white; text-decoration: none; margin-left: 100px; font-size: 13px;">Ride</a> 
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Drive</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Eat</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Uber for business</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Uber Freight</p></a>
+     </div>
+
+     
+     <div style="margin-left: 600px; margin-top: -330px;">
+      <h5 style="color: white; margin-left: 100px; margin-top: 110px; font-weight: normal; font-size: 20px;">Global itizenship</h5>
+      <br>
+      <a href="#" style="color: white;text-decoration: none; margin-left: 100px; font-size: 13px;">Safety</a> 
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Diversity and Inclusion</p></a>
+     </div>
+
+     
+     <div style="margin-left: 900px; margin-top: -220px;">
+      <h5 style="color: white; margin-left: 100px; margin-top: 105px; font-weight: normal; font-size: 20px;">Travel</h5>
+      <br>
+      <a href="#" style="color: white; text-decoration: none; margin-left: 100px; font-size: 13px;">Rserve</a> 
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Airports</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Cities</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Uber for business</p></a>
+      <a href="#" style="color: white; text-decoration: none;"><p style="margin-left: 100px; margin-top: 10px; font-size: 13px;">Uber Freight</p></a>
+    
+     </div>
+
+
+
+<a href="#" ><button  style="background:none; border: none; margin-top: 180px; margin-left: 90px; "><i class="bi bi-facebook"></i></button></a>
+<a href="#" ><button style="background: none; border: none; margin-top: 180px; margin-left: 50px;"><i class="bi bi-twitter"></i></button></a>
+<a href="#" ><button style="background: none; border: none; margin-top: 180px; margin-left: 50px;"><i class="bi bi-youtube"></i></button></a>
+<a href="#" ><button style="background: none; border: none; margin-top: 180px; margin-left: 50px;"><i class="bi bi-linkedin"></i></button></a>
+<a href="#" ><button style="background: none; border: none; margin-top: 180px; margin-left: 50px;"><i class="bi bi-instagram"></i></button></a>
+
+<button style="width: 80px; margin-left: 500px; background: none; border: none; margin-top: 7px; font-size: 15px;"> <i class="bi bi-globe " > English</i></button>
+
+ <div style="margin-top: -24px;"><button style="width: 190px; margin-left: 1035px; background: none; border: none; font-size: 15px;"><i class="bi bi-geo-alt-fill"> San Francisco Bay Area</i></button></div>
+
+
+ <div>
+  <a href="#"><img  src="images/goo.webp" alt="" style="width: 130px; margin-top: 70px; margin-left: 100px;"></a>
+  <a href="#"><img src="images/app.png" alt="" style="width: 130px; margin-top: 70px; margin-left: 10px;"></a>
+ </div>
+
+ <div style="margin-top: 80PX; margin-left: 400px; opacity: 70%;">
+  <a href="#" style="color: white; margin-left: 660px; font-size: 12px; text-decoration: none;">Privacy</a>
+  <a href="#" style="color: white; margin-left: 20px; font-size: 12px; text-decoration: none;">Accessibility</a>
+  <a href="#" style="color: white; margin-left: 20px; font-size: 12px; text-decoration: none;">Terms</a>
+ </div>
+
+ <p style="color: white; font-size: 12px; opacity: 70%; margin-top: -30px; margin-left: 100px;">@2024 Uber Technologies Inc.</p>
+
+    </div>
+
+
+<div class="container">
+  <img id="sa" src="images/ulb.jpg" alt="">
+</div>
+
+
+
+</body>
+</html>
